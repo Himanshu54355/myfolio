@@ -218,3 +218,5 @@ themeButton.addEventListener('click', () => {
  })
  
 //  f6d5047b-e0fd-4b1d-a8a0-38389075f0a2
+
+/*==================== Search Functionality ====================*/

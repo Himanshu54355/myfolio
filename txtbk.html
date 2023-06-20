@@ -1,21 +1,892 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">        
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">        
         
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--==================== CSS ====================-->
+    
+    <link rel="stylesheet" href="assets/css/tbl_styles.css">
 
-        <title>Textbooks</title>
-    </head>
-    <body>
-      <h2>Page under construction</h2>
-    </body>
-     
+    <title>
+        Textbooks
+    </title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header >
+        <div class="head_container">
+            <div class="head__title nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i><t>
+                &nbsp&nbsp Available Textbooks
+            </div>
+            <div>
+                <input type="text" name id="searchInput" class="search__input" placeholder='Search book name here'></div>
+
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <table class="table__content" id="dataTable">
+            <thead>
+                <tr>
+                    <th>S. No.</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Subject</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>A Textbook of Electrical Technolody</td>
+                    <td>B.L. Theraja,<br>A.K. Theraja</td>
+                    <td>BEEE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/1-BEEE/BEEE_Theraja.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Digital Disegn [5th Edition]</td>
+                    <td>M. Morris Mano,<br>
+                        Michael D. Ciletti
+                    </td>
+                    <td>BEEE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/1-BEEE/BEEE_Moris_Mano.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Digital Systems Design</td>
+                    <td>Ramaswamy Palaniappan</td>
+                    <td>BEEE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/1-BEEE/BEEE_Ramaswamy.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Electrical & Electronic principles and Technology [3rd Edition]</td>
+                    <td>John Bird</td>
+                    <td>BEEE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/1-BEEE/BEEE_John_Bird1.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Electrical circuit Theory & Technology [2nd Edition]</td>
+                    <td>John Bird</td>
+                    <td>BEEE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/1-BEEE/BEEE_John_Bird.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Fundamentals of Electric circuits [5th Edition]</td>
+                    <td>Charles K. Alexander,<br>Matthew N.O. Sadiku</td>
+                    <td>BEEE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/1-BEEE/BEEE_CharlesK.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Advanced Engineering Mathematics [10th Edition]</td>
+                    <td>Erwin Kreyzig</td>
+                    <td>AOD,<br>Complex Variables</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/2-AOD/AOD_Erwin.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Advanced Engineering Mathematics (sol. manual) [10th Edition]</td>
+                    <td>Erwin Kreyzig</td>
+                    <td>AOD,<br>Complex Variables</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/2-AOD/AOD_Erwin_sol.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Higher Engineering Mathematics [42 Edition]</td>
+                    <td>B.S. Grewal</td>
+                    <td>AOD</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/2-AOD/AOD_BS_Grewal.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Thomas' Calculus</td>
+                    <td>George B. Thomas Jr.</td>
+                    <td>AOD</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/2-AOD/AOD_Thomas.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>A guide to Complex Variables</td>
+                    <td>Steven G. Krantz</td>
+                    <td>Complex & PDE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/3-Complex/Complex_Steven.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Complex Analysis for Mathematics and Engineering</td>
+                    <td>John H. Mathews,<br>Russell W. Howell</td>
+                    <td>Complex & PDE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/3-Complex/Complex_John_Mathews.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Schaum's outlines of Complex Variables [2nd Edition]</td>
+                    <td>Murray R. Spiegel,<br>Seymour Lipschutz</td>
+                    <td>Complex & PDE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/3-Complex/Complex_Spiegel.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Applied Numerical Analysis [7nd Edition]</td>
+                    <td>Curtis F. Gerald,<br>Patric O. Wheatly</td>
+                    <td>ANM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/4-ANM/ANM_gerald.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Numerical Methods for Engineers [7nd Edition]</td>
+                    <td>Steven C. Chapra,<br>Raymond P. Canale</td>
+                    <td>ANM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/4-ANM/ANM_steven.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Engineering Drawing [50th Edition]</td>
+                    <td>N.D. Bhatt</td>
+                    <td>ED</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/5-ED/ED_ND_Bhatt.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Textbook of Engineering Drawing [2nd Edition]</td>
+                    <td>K. Venkata Reddy</td>
+                    <td>ED</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/5-ED/ED_K_Venkata.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Engineering Mechanics (Statics & Dynamics) [4th Edition]</td>
+                    <td>Irving H. Shames</td>
+                    <td>Engineering Mechanics</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/6-Mechanics/Mech_Shames.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Engineering Mechanics (Statics) [7th Edition]</td>
+                    <td>J.J. Meriam,<br>L.G. Kraige</td>
+                    <td>Engineering Mechanics</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/6-Mechanics/Mech_Kraige.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Vector Mechanics for Engineers [9th Edition]</td>
+                    <td>Ferdinand P. Beer,<br>E. Russell Johnston Jr.</td>
+                    <td>Engineering Mechanics</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/6-Mechanics/Mech_Beer.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Vector Mechanics Solution Manual [10th Edition]</td>
+                    <td>Ferdinand P. Beer,<br>E. Russell Johnston Jr.</td>
+                    <td>Engineering Mechanics</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/6-Mechanics/Mech_Beer_sol.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Engineering Thermodynamics by RK Rajput [3rd Edition]</td>
+                    <td>R.K. Rajput</td>
+                    <td>Thermodynamics</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/7-Thermodynamics/Thermo_RK_Rajput.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>A textbook Fluid mechanics and hydraulic machines [9th Edition]</td>
+                    <td>R.K. Bansal</td>
+                    <td>FM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/8-FM/FM_RK_Bansal.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Fluid Mechanics fundamentals and applications [4th Edition]</td>
+                    <td>Yunus A. Cengel,<br>John M. Cimbala</td>
+                    <td>FM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/8-FM/FM_Yunus_Cengel.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Introduction to fluid mechanics [8th Edition]</td>
+                    <td>Philip J. Pritchard,<br>John C. Leylegian</td>
+                    <td>FM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/8-FM/FM_Philip.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>Fluid mechanics & machinery [2nd Edition]</td>
+                    <td>C.P. Kothandaraman,<br>R. Rudramoorthy</td>
+                    <td>FM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/8-FM/FM_CPK.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Fundamentals of Metallurgy</td>
+                    <td>Seshadri Seetharaman</td>
+                    <td>MET</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/9-MET/MET_Seshadri.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Fundamentals of Materials Science and Engineering [5th Edition]</td>
+                    <td>William D. Callister Jr.</td>
+                    <td>MET</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/9-MET/MET_William.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>Manufacturing Technology (vol. 1 & 2) [5th Edition]</td>
+                    <td>P.N. Modi</td>
+                    <td>Manf. Processes</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/10-MP/MP_PN_Rao.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Machine Drawing [3rd Edition]</td>
+                    <td>K.L. Narayana,<br>P. Kannaiah</td>
+                    <td>Machine Drawing</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/11-MD/MD_KL_Narayana.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Strength of Materials [4th Edition]</td>
+                    <td>R.K. Bansal</td>
+                    <td>SOM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/12-SOM/SOM_RK_Bansal.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>Thermal Engineering [8th Edition]</td>
+                    <td>R.K. Rajput</td>
+                    <td>TES</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/13-TES/TES_RK_Rajput.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>Theory of Machines [3rd Edition]</td>
+                    <td>S.S. Rattan</td>
+                    <td>MOM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/14-MOM/MOM_SS_Rattan.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>Fundamentals of heat and mass transfer [2nd Edition]</td>
+                    <td>C.P. Kothandaraman</td>
+                    <td>HT</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/15-HT/HT_CPK.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>Heat Transfer - A practical approach [3rd Edition]</td>
+                    <td>Yunus A. Cengel</td>
+                    <td>HT</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/15-HT/HT_Cengel.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>Heat and Mass Transfer</td>
+                    <td>D.S.Kumar</td>
+                    <td>HT</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/15-HT/HT_DS_Kumar.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td>Heat and Mass Transfer</td>
+                    <td>R.K. Rajput</td>
+                    <td>HT</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/15-HT/HT_RK_Rajput.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>Introduction to Heat Transfer</td>
+                    <td>S.K. Som</td>
+                    <td>HT</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/15-HT/HT_SK_Som.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>Manufacturing Engineering & Technology [7th Edition]</td>
+                    <td>Serope Kalpakjian,<br>Steven R. Schmid</td>
+                    <td>MPM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/16-MPM/MPM_Kalpakjian.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>Machining Technology: Machine tools and operations</td>
+                    <td>Helmi A. Youssef,<br>Hassan El-Hofy</td>
+                    <td>MPM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/16-MPM/MPM_youssef.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>Machining Fundamentals and recent advances</td>
+                    <td>J. Paulo Davim</td>
+                    <td>MPM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/16-MPM/MPM_Davim.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>Metal Cutting Principles [2nd Edition]</td>
+                    <td>Milton C. Shaw</td>
+                    <td>MPM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/16-MPM/MPM_Shaw.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>43</td>
+                    <td>Engineering Metrology and measurements</td>
+                    <td>N.V. Raghvendra<br>L. Krishnamurthy</td>
+                    <td>MPM</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/16-MPM/MPM_Raghvendra.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>44</td>
+                    <td>A Textbook of Machine Design [1st Edition]</td>
+                    <td>R.S. Khurmi<br>J.K. Gupta</td>
+                    <td>DME</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/17-DME/DME_RS_Khurmi.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>Design of Machine Elements [3rd Edition]</td>
+                    <td>V.B. Bhandari</td>
+                    <td>DME</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/17-DME/Bhandari_DME.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>46</td>
+                    <td>Design of Machine Elements (solutions) [3rd Edition]</td>
+                    <td>V.B. Bhandari</td>
+                    <td>DME</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/17-DME/DME_Bhandari_sol.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>47</td>
+                    <td>DME Data Book</td>
+                    <td>V.S. Konnur<br>A.A. Menon</td>
+                    <td>DME</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/17-DME/Data_Book.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>Advanced Mechanics of Solids [3rd Edition]</td>
+                    <td>L.S. Srinath</td>
+                    <td>DME</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/17-DME/DME_LS_Srinath.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>49</td>
+                    <td>Internal Combustion Engines [4th Edition]</td>
+                    <td>V. Ganesan</td>
+                    <td>ICE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/19-ICE/ICE_Ganesan.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>A textbook of Internal Combustion Engines [3rd Edition]</td>
+                    <td>R.K. Rajput</td>
+                    <td>ICE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/19-ICE/ICE_RK_Rajput.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>51</td>
+                    <td>New age power plant engineering</td>
+                    <td>A.K. Raja<br>Manish Dwivedi</td>
+                    <td>PPE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/20-PPE/PPE_Raja.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>52</td>
+                    <td>Power Plant Engineering [4th Edition]</td>
+                    <td>P.K. Nag</td>
+                    <td>PPE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/20-PPE/PPE_PK_Nag.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>53</td>
+                    <td>Power Plant Engineering [5th Edition]</td>
+                    <td>R.K. Rajput</td>
+                    <td>PPE</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/20-PPE/PPE_RK_Rajput.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>54</td>
+                    <td>Computational Fluid Dynamics Principles and Applications [3rd Edition]</td>
+                    <td>Jiri Blazek</td>
+                    <td>CFD</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/18-CFD/CFD_Blazek.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>Computational Fluid Dynamics: the basics with applications</td>
+                    <td>John D. Anderson Jr.</td>
+                    <td>CFD</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/18-CFD/CFD_Anderson.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>56</td>
+                    <td>An introduction to CFD: The finite volume method [2nd Edition]</td>
+                    <td>H.K. Versteeg,<br>W. Malalasekera</td>
+                    <td>CFD</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/18-CFD/CFD_Versteeg.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>57</td>
+                    <td>Engineering Chemistry</td>
+                    <td>Jain & Jain</td>
+                    <td>Engg. Chem.</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/21-EC/EC_Jain.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>58</td>
+                    <td>Laser Fundamentals [2nd Edition]</td>
+                    <td>William T. Silfvast</td>
+                    <td>Engg. Phy.</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/22-EP/EP_william.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>59</td>
+                    <td>Mordern Physics [3rd Edition]</td>
+                    <td>Raymond A. Serway,<br>Clement J. Moses</td>
+                    <td>Engg. Phy.</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/22-EP/EP_Raymond.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>Operations Research: An Introduction [10th Edition]</td>
+                    <td>Hamdy A. Taha</td>
+                    <td>OR</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/25-OR/OR_Taha.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>61</td>
+                    <td>Operations Research: Applications and algorithms [4th Edition]</td>
+                    <td>Wayne L. Winston</td>
+                    <td>OR</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/25-OR/OR_Wayne.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>62</td>
+                    <td>Operations Research</td>
+                    <td>P.K. Gupta<br>D.S.Hira</td>
+                    <td>OR</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/25-OR/OR_Hira.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>63</td>
+                    <td>Probability and Statistics for Engineers and Scientists [9th Edition]</td>
+                    <td>Ronald E. Walpole,<br>Raymond H. Myres</td>
+                    <td>Statistics</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/23-Stats/STATS_Textbook.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>64</td>
+                    <td>Environmental Science [13th Edition]</td>
+                    <td>G. Tyler Miller,<br>Scott E. Spoolman</td>
+                    <td>EVS</td>
+                    <td>
+                        <div class="about__buttons">
+                            <a download="" href="assets/textbooks/24-EVS/EVS_Tyler.pdf" class="button button--flex">
+                            Download<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        
+    </footer>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/script.js"></script>
+</body>

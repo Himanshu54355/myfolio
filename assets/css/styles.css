@@ -1009,7 +1009,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 340px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1253,16 +1253,14 @@ img {
     transform: translateX(-6rem);
   }
 
-  .container{
-    width: 1000px;
-  }
+  
   .about__container{
     
     column-gap: 5rem;
   }
   .about__img{
     height: 250px;
-    width: 700px;
+    width: 600px;
   }
   .about__description{
     text-align: initial;
