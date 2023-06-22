@@ -248,6 +248,7 @@ td:nth-child(4) {
 /* TABLE CONTENT */
 .table__content{
     font-family: var(--body-font);
+    font-size: var(--normal-font-size);
 }
 
 /* ROW SUBHEADING */
@@ -334,14 +335,31 @@ td:nth-child(4) {
   /* MEDIA QUERIES */
   @media screen and (max-width: 340px){
     .search__input{
-        width: 200px;
+        width: 100px;
     }
+    :root {
+      --big-font-size: 2rem;
+      --h1-font-size: 1.25rem;
+      --h2-font-size: 0.5rem;
+      --h3-font-size: 0.25rem;
+      --normal-font-size: 0.5rem;
+      --small-font-size: .575rem;
+      --smaller-font-size: .513rem;
+  }
+  .table__content{
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+}
   }
 
   @media screen and (min-width: 568px) {
     .search__input{
         width: 300px;
     }
+    .table__content{
+      font-family: var(--body-font);
+      font-size: var(--normal-font-size);
+  }
   }
 
   @media screen and (min-width: 768px){
