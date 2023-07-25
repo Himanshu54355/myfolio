@@ -580,6 +580,48 @@ img {
 .skills__matlab{
   width: 80%;
 }
+.skills__basic{
+  width: 90%;
+}
+.skills__sp{
+  width: 70%;
+}
+.skills__ip{
+  width: 65%;
+}
+.skills__thermal{
+  width: 70%;
+}
+.skills__mech{
+  width: 80%;
+}
+.skills__drawing{
+  width: 75%;
+}
+.skills__kdom{
+  width: 70%;
+}
+.skills__iem{
+  width: 90%;
+}
+.skills__tqm{
+  width: 70%;
+}
+.skills__scm{
+  width: 80%;
+}
+.skills__or{
+  width: 90%;
+}
+.skills__word{
+  width: 80%;
+}
+.skills__ppt{
+  width: 80%;
+}
+.skills__excel{
+  width: 60%;
+}
 
 .skills__close .skills__list{
   height: 0;
