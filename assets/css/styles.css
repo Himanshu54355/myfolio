@@ -7,10 +7,10 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color: hsl(var(--hue-color), 90%, 70%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -19,7 +19,7 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --project-img: url('R.jpg');
-    --body-img: url('pxfuel.jpg');
+    /* --body-img: url('pxfuel.jpg'); */
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: rgb(219, 242, 255);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
@@ -336,6 +336,7 @@ img {
 
 .home__description{
   margin-bottom: var(--mb-2);
+  font-size: smaller;
 }
 
 .home__scroll{
@@ -432,14 +433,17 @@ img {
 
 .about__img{
   width: 200px;
+  height: 600px;
   border-radius: .5rem;
   justify-self: center;
-  align-self: center;
+  align-self: top;
+  margin-bottom: var(--mb-1-5);
 }
 
 .about__description{
   text-align: center;
   margin-bottom: var(--mb-2-5);
+  font-size: var(--small-font-size);
 }
 
 .about__info{
@@ -467,6 +471,7 @@ img {
 .about__buttons{
   display: flex;
   justify-content: center;
+  justify-self: center;
 }
 /*==================== SKILLS ====================*/
 .skills__container{
@@ -1084,7 +1089,7 @@ img {
     justify-content: center;
   }
   .services__content{
-    padding: 3.5rem;
+    padding: 1.5rem;
   }
   .services__modal{
     padding: 0.5rem;
