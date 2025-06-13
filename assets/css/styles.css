@@ -432,7 +432,7 @@ img {
 /*==================== ABOUT ====================*/
 
 .about__img{
-  width: 200px;
+  width: 400px;
   height: 600px;
   border-radius: .5rem;
   justify-self: center;
@@ -1074,6 +1074,11 @@ img {
   }
   .home__blob{
     width: 180px;
+  }
+
+  .about__img{
+    width: 600px;
+    justify-self: center;
   }
 
   .skills__title{
