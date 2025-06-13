@@ -433,7 +433,7 @@ img {
 
 .about__img{
   width: 400px;
-  height: 600px;
+  height: 300px;
   border-radius: .5rem;
   justify-self: center;
   align-self: top;
@@ -716,7 +716,7 @@ img {
 /*==================== SERVICES ====================*/
 .services__container{
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .services__content{
