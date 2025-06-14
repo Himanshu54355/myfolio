@@ -13,6 +13,18 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "LfA_V1eZfKy23V2zx",
+                });
+            })();
+        </script>
+        <script src="assets/js/mail.js"></script>
+
         <title>Himanshu's Portfolio</title>
     </head>
     
@@ -1117,7 +1129,7 @@
 
                                 <div>
                                     <h3 class="contact__title">Location</h3>
-                                    <span class="contact__subtitle">Vellore, TN, India - 632014</span>
+                                    <span class="contact__subtitle">Jamnagar, GJ, India - 621008</span>
                                 </div>
                             </div>
                         </div>
@@ -1134,8 +1146,8 @@
                                 </div>
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Project</label>
-                                <input type="text" id="project" class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                                <input type="text" id="subject" class="contact__input">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Message</label>
@@ -1143,7 +1155,7 @@
                             </div>
 
                             <div>
-                                <button type="submit" id="submit" class="button--button button--flex">
+                                <button type="submit" onclick="sendMail()" class="button--button button--flex">
                                     Send Message
                                     <i class="uil uil-message button__icon"></i>
                                 </button>
@@ -1203,8 +1215,5 @@
 
             <!--==================== MAIN JS ====================-->
             <script src="assets/js/main.js"></script>
-            
-            <!--==================== SMTP JS ====================-->
-            <script src="assets/js/smtp.js"></script>
         </body>
 </html>
