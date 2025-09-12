@@ -181,42 +181,29 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*==================== EMAIL FORM ====================*/
- const fname = document.getElementById('name');
- const email = document.getElementById('email');
- const pjt = document.getElementById('project');
- const msg = document.getElementById('message');
+// Location Opener---------------------------------------------------------
+const address = "450 16th St NW, Atlanta GA, 30363";
 
- const submit = document.getElementsByClassName('contact__form')[0];
+// Grab the link element
+const mapLink = document.getElementById("mapLink");
 
- submit.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    console.log("clicked");
+mapLink.addEventListener("click", function (e) {
+  e.preventDefault(); // prevent the dummy "#" link
 
-    //proper format to send in mail
-    let ebody = `
-    <b>Name: </b>${fname.value}
-    <br>
-    <b>Email: </b>${email.value}
-    <br>
-    <b>Subject: </b>${pjt.value}
-    <br><br>
-    <b>Message: </b>${msg.value}
+  // Detect if the user is on iOS (iPhone/iPad/iPod)
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-    `
+  let mapsUrl = "";
+  if (isIOS) {
+    // Apple Maps
+    mapsUrl = "https://maps.apple.com/?q=" + encodeURIComponent(address);
+  } else {
+    // Google Maps
+    mapsUrl = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address);
+  }
 
-    // Email code here
-    Email.send({
-        SecureToken : "f6d5047b-e0fd-4b1d-a8a0-38389075f0a2",
-        To : 'hadesai1110@gmail.com',
-        From : "haddesai1110@gmail.com",
-        Subject : "Enquiry Email from: " + email.value,
-        Body : ebody
-    }).then(
-      message => alert('Message Sent successfully')
-    );
- })
- 
-//  f6d5047b-e0fd-4b1d-a8a0-38389075f0a2
+  // Open in a new tab (browser) or app (on mobile)
+  window.open(mapsUrl, "_blank", "noopener");
+});
 
-/*==================== Search Functionality ====================*/
+
