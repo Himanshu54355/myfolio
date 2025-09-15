@@ -18,7 +18,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --project-img: url('R.jpg');
+    --project-img: url('Img.jpg');
     /* --body-img: url('pxfuel.jpg'); */
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: rgb(219, 242, 255);
@@ -83,7 +83,7 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-  --project-img: url('S.jpg');
+  --project-img: url('imgd.jpg');
 }
 
 /*========== Button Dark/Light ==========*/
@@ -428,6 +428,20 @@ img {
 .button--link:hover{
   background-color: transparent;
   color: var(--first-color-alt);
+}
+
+.project--button{                                           /*new*/
+  display: inline-flex;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.project--button:hover{
+  background-color: var(--first-color-alt);                 /*new*/
 }
 /*==================== ABOUT ====================*/
 
@@ -873,32 +887,40 @@ img {
   outline: none;
 }
 /*==================== PROJECT IN MIND ====================*/
-.project{
+.project{                                             /*new*/
   text-align: center;
+  height: 500px;
 }
 
-.project__bg{
-  background-image: var(--project-img);
-  background-size: cover;
-  background-repeat: no-repeat;
+.project__bg{                                         /*new*/
+  background: var(--project-img);
   align-items: center;
-  padding-top: 3rem;
-  height: 250px;
+  padding-top: 0.1rem;
+  padding-bottom: 3rem;
+  height: 500px;
 }
 
-.project__title{
+.project__column_one{                                 /*new*/
+  padding: 0;
+}
+
+.project__column_two{                                 /*new*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.project__title{                                      /*new*/
   align-self: center;
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-0-75);
+  color: var(--first-color-alt);
 }
 
 .project__description{
   align-self: center;
   margin-bottom: var(--mb-1-5);
-}
-
-.project__title{
-  color: #FFF;
 }
 
 .project__description{
@@ -1103,6 +1125,66 @@ img {
   .services__modal{
     padding: 0.5rem;
   }
+  .project{                                           /*new*/
+    height: 300px;
+  }
+
+  .project__title{                                    /*new*/
+    font-size: var(--smaller-font-size);
+    color:var(--first-color-alt);
+  }
+
+  .project__data{                                     /*new*/
+    justify-items: left;
+    padding-top: 0.1rem;
+    margin-left: 0rem;
+
+  }
+
+  .project__bg{                                        /*new*/
+    background-image: var(--project-img);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 196px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 1.5rem;
+    background-size: contain;
+  }
+
+  .project__container{ 
+    height: 190px;                               /*new*/
+    grid-template-columns: 60% max-content;
+    column-gap: 2.3rem;
+    margin-top: 1px;
+    margin-left: 10px;
+  }
+
+  .project__column_one{                                 /*new*/
+  padding: 0;
+  max-height: 100%;
+  }
+
+  .project__column_two{                                 /*new*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+  .project--button{                                     /*new*/
+    display: inline-flex;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 0.2rem 0.4rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .project__icon{                                      /*new*/ 
+    font-size: 0.9rem;
+  }    
 
 }
 
@@ -1250,27 +1332,28 @@ img {
     align-items: center;
   }
 
-  .project{
+  .project{                                                   /*new*/
     text-align: center;
   }
-  .project__bg{
+  .project__bg{                                               /*new*/
     background: none;
   }
-  .project__container{
+  .project__container{                                        /*new*/
     background-image: var(--project-img);
-    background-size: cover;
+    background-size: cover;                                   /*new*/
     background-repeat: no-repeat;
     border-radius: 1rem;
-    padding: 2rem 2.5rem 2rem;
+    padding: 0rem 0.8rem 0.8rem 1rem;
     grid-template-columns: 1fr max-content;
-    column-gap: 3rem;
+    column-gap: 10rem;
+    height: 430px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   }
-  .project__data{
-    justify-items: center;
+  .project__data{                                             /*new*/
+    justify-items: left;
     padding-top: .8rem;
-    margin-left: 3rem;
+    margin-left: 0rem;
   }
-
   .footer__container{
     column-gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
