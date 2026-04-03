@@ -689,7 +689,7 @@ img {
 }
 
 .qualification_exp__title{
-  color: #000;
+  color: inherit;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
